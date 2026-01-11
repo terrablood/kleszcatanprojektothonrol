@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aknakereső</title>
+    <link rel="stylesheet" href="{% static 'chat/css/style.css' %}">
+    <script src="{% static 'chat/js/0_base.js' %}" defer></script>
+    <script src="{% static 'chat/js/1_fetch.js' %}" defer></script>
+    <script src="{% static 'chat/js/2_websocket.js' %}" defer></script>
+    <script src="{% static 'chat/js/3_chat.js' %}" defer></script>
+    <script src="{% static 'chat/js/catan.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Yoursweeper</h1>
+        <h2>{{ a_jatek.nev }}</h2>
+    </header>
+
+    <main>
+        <h3 id="egyik_player">{{a_jatek.egyik.username}}</h3>
+        <div id="egyik_palya" class="container"> 
+            {% comment %} <!-- 15x15-ös tábla --> {% endcomment %}
+        </div>
+
+        <h3 id="masik_player">{{a_jatek.masik.username}}</h3>
+        <div id="masik_palya" class="container"> 
+            {% comment %} <!-- 15x15-ös tábla --> {% endcomment %}
+        </div>
+        <div class="dobasbuttonc"> 
+             <button id="dobas">dobás</button>
+             <!--<button id="claimkiir">kiír</button>-->  
+        </div>
+        <div class="structures">
+            <button id="rout">ut: 4fa</button>
+            <button id="village">falu: 15fa 10kő 20széna 10szövet</button>
+            <button id="town">varos: 30fa 40kő 10széna 20szövet 6érc</button>
+            <button id="expedition">expedíció: 5fa 2széna 2szövet</button>
+            <button id="minee">bánya: 30fa 10kő 10széna 15szövet</button>
+        </div>
+    </main>
+    <textarea id="chatlog" cols="100" rows="20"></textarea><br>
+    <input type="text" id="szoveginput">
+    <button id="kuldgomb">Küld</button>
+</body>
+</html>

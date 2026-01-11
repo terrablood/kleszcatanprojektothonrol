@@ -1,0 +1,139 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(24,20px);
+    grid-template-rows: repeat(24,20px);
+    justify-content: center;
+}
+.dobasbuttonc{
+    display: grid;
+    justify-content: center;
+}
+.structures{
+    display: grid;
+    grid-template-columns: rows(5);
+    justify-content: center;
+}
+.container div:hover{
+    background-color: #F0A0A0;
+    border-top-color: #F0C0C0;
+    border-left-color: #F0C0C0;
+    border-bottom-color: #F04040;
+    border-right-color: #F04040;
+}
+.mezo{
+    background-color: #11df56;
+    border-top-color:#25f76b;
+    border-left-color:#25f76b;
+    border-bottom-color:#049635;
+    border-right-color:#049635;
+    border-width: 3px;
+    border-style: solid;
+    color: red;
+}
+.erdo{
+    background-color: #04471a;
+    border-top-color:#058630;
+    border-left-color:#049635;
+    border-bottom-color:#023011;
+    border-right-color:#023011;
+    border-width: 3px;
+    border-style: solid;
+    color: red;
+}
+.hegyseg{
+    background-color: #ffffff;
+    border-top-color:#B0B0B0;
+    border-left-color:#B0B0B0;
+    border-bottom-color:#949494;
+    border-right-color:#949494;
+    border-width: 3px;
+    border-style: solid;
+    color: red;
+}
+.mocsar{
+    background-color: #8eeab7;
+    border-top-color:#bafbd7;
+    border-left-color:#bafbd7;
+    border-bottom-color:#4aa573;
+    border-right-color:#4aa573;
+    border-width: 3px;
+    border-style: solid;
+    color: red;
+}
+#dobas {
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#claimkiir {
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#rout{
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#village{
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#town{
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#expedition{
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#minee{
+    background-color: rgb(197, 197, 255);
+    border-top-color:rgb(141, 141, 244);
+    border-left-color:rgb(141, 141, 244);
+    border-bottom-color:rgb(55, 55, 105);
+    border-right-color:rgb(55, 55, 105);
+    border-style: solid;
+    color: rgb(19, 3, 54);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
