@@ -1,17 +1,38 @@
+#egyik_player{
+    grid-area: egyik_player;
+}
+
+#masik_player{
+    grid-area: masik_player;
+}
+
+#egyik_palya{
+    grid-area: egyik_palya;
+}
+
+#masik_palya{
+    grid-area: masik_palya;
+}
 .container{
     display: grid;
     grid-template-columns: repeat(24,20px);
     grid-template-rows: repeat(24,20px);
     justify-content: center;
 }
-.dobasbuttonc{
-    display: grid;
-    justify-content: center;
-}
 .structures{
     display: grid;
-    grid-template-columns: rows(5);
+    grid-template-columns: rows(6);
     justify-content: center;
+}
+main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "egyik_player masik_player"
+    "egyik_palya masik_palya";
+    gap:20px;
 }
 .container div:hover{
     background-color: #F0A0A0;
@@ -71,7 +92,7 @@
     padding: 10px 20px;
     border-radius: 5px;
 }
-#claimkiir {
+#resourcess {
     background-color: rgb(197, 197, 255);
     border-top-color:rgb(141, 141, 244);
     border-left-color:rgb(141, 141, 244);

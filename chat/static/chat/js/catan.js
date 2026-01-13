@@ -711,10 +711,10 @@ button.addEventListener("click", function () {
     alert(dobott);
     
 });
-/*const button2 = document.getElementById("claimkiir");
+const button2 = document.getElementById("resourcess");
 button2.addEventListener("click", function () {
-    claimkiírás(claimlista);
-});*/
+        alert("széna:",nyersanyaglista[0],"fa:",nyersanyaglista[1],"kö:",nyersanyaglista[2],"rost:",nyersanyaglista[3],"fém",nyersanyaglista[4]);
+});
 const utt = document.getElementById("rout");
 utt.addEventListener("click", function () {
     onclickswitch(ut);
