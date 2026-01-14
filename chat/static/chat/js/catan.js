@@ -177,6 +177,27 @@ function ellenorzo_balkatt(e){
     console.log(x); 
     console.log(y);
 }
+function vereseg_bejelentese(){
+    valtozok_kuldese({
+        'message': `Szegény ${username} elvesztette a játékot.`,
+        'jatek_allapot_update':MAR_NEM_MEGY_NYERTEL,
+    });
+}
+function gyozelem_bejelentese(){
+    valtozok_kuldese({
+        'message': `Gratulálunk! ${username} megnyerte a játékot.`,
+        'jatek_allapot_update':MAR_NEM_MEGY_VESZTETTEL,
+    });
+}
+function gyozelem(){
+    jatek_allapota = MAR_NEM_MEGY_NYERTEL;
+    alert('Gratulálok, győztél!');
+}
+function vereseg(){
+    vereseg_bejelentese();
+    jatek_allapota = MAR_NEM_MEGY_VESZTETTEL;
+    alert('you died');
+}
 // ez  a nyersanyag osztás rész -->> müködnek
 function kockadobas()
 {
@@ -357,6 +378,7 @@ function falu(e)
                     if(nyersanyaglista[5] >= 100)
                     {
                         onclickswitch(semmi);
+                        gyozelem();
                     }
                 }
                 else
@@ -430,6 +452,7 @@ function varos(e)
                 if(nyersanyaglista[5] >= 100)
                 {
                     onclickswitch(semmi);
+                    gyozelem();
                 }
                 varosaim ++;
             }

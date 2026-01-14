@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(158, 158, 158);
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,80px);
+    grid-template-rows: repeat(1,40px);
+    justify-content: center;
+}
+.container2{
+    display: grid;
+    grid-template-columns: repeat(1,80px);
+    grid-template-rows: repeat(1,40px);
+    justify-content: center;
+}
