@@ -19,6 +19,12 @@
     grid-template-rows: repeat(24,20px);
     justify-content: center;
 }
+.container2{
+    display: grid;
+    grid-template-columns: repeat(24,20px);
+    grid-template-rows: repeat(24,20px);
+    justify-content: center;
+}
 .structures{
     display: grid;
     grid-template-columns: rows(6);
