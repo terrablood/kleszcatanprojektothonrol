@@ -1,24 +1,21 @@
-/**
- * ez fut le akkor, ha elkezd üzemelni a websocket.
- */
+// 2_websocket.js
+
+
 function socket_megnyilt(){
     valtozok_kuldese({'message': 'betöltött nálam az oldal.'});
 }
 /**
- * Ezzel tudsz változókat küldeni egy szótár formájában a többieknek a websocketen keresztül.
  * @param {Object} szotar - a változók és értékeik egy szótárban
  */
 function valtozok_kuldese(szotar){
     ws.send(JSON.stringify(szotar));
 }
 /**
- * Ez fut le akkor, amikor valaki üzenetet küldött a websocketen keresztül
  * @param {MessageEvent} e 
  */
 function valtozok_fogadasa(e) {
     const szotar = JSON.parse(e.data);
 
-    /* itt babrálsz a bejövő adatokkal! */
 
     if ('message' in szotar) {
         chatlog.value += szotar.message + '\n';
@@ -36,14 +33,12 @@ function valtozok_fogadasa(e) {
     if ('kattintott_mezo_x' in szotar && 'kattintott_mezo_y' in szotar && 'felderitesek' in szotar){
         const az_ellenfel = ellenfele(ki_vagy_te);
 
-        // az ő pályáján be kell kattintani a dolgokat.
         
     }
 
 
 };
 /**
- * Ez fut le akkor, amikor a websocket valahogy bezárul (pl. bezárják az ablakot.)
  * @param {CloseEvent} e 
  */
 function socket_bezarult(e) {

@@ -1,3 +1,5 @@
+// 0_base.js
+
 /**
  * Visszaadja egy lista utolsó előtti elemét.
  * @param {Array} lista 

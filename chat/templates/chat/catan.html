@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aknakereső</title>
+    <script>
+        const PLAYER1 = "{{ a_jatek.egyik.username }}";
+        const PLAYER2 = "{{ a_jatek.masik.username }}";
+        const CURRENT_USER = "{{ request.user.username }}";
+    </script>
+    <title>Catan</title>
     <link rel="stylesheet" href="{% static 'chat/css/style.css' %}">
     <script src="{% static 'chat/js/0_base.js' %}" defer></script>
     <script src="{% static 'chat/js/1_fetch.js' %}" defer></script>
     <script src="{% static 'chat/js/2_websocket.js' %}" defer></script>
-    <script src="{% static 'chat/js/3_chat.js' %}" defer></script>
+    <script src="{% static 'chat/js/3_chat_v2.js' %}" defer></script>
     <script src="{% static 'chat/js/catan.js' %}" defer></script>
 </head>
 <body>
     <header>
-        <h1>Yoursweeper</h1>
+        <h1>catan</h1>
         <h2>{{ a_jatek.nev }}</h2>
     </header>
 

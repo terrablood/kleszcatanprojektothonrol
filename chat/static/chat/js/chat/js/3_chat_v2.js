@@ -1,3 +1,5 @@
+// 3_chat.js
+
 const chatlog = document.getElementById('chatlog');
 const szoveginput = document.getElementById('szoveginput');
 const kuldgomb = document.getElementById('kuldgomb');
@@ -17,7 +19,9 @@ function billentyunyomasvizsgalat(e) {
  * @param {MouseEvent} e 
  */
 function uzenet_klikk(e) {
-    valtozok_kuldese({'message': `${username}: ${szoveginput.value}`});
+    valtozok_kuldese({ 
+        message: `${CURRENT_USER}: ${szoveginput.value}` 
+    });
     szoveginput.value = '';
 }
 
